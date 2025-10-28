@@ -15,6 +15,8 @@ RUN apt-get update && \
         https://raw.githubusercontent.com/ERSTT/Docker-WeChat/refs/heads/main/WeChat.png && \
     curl -L -o /usr/bin/start-wechat.sh \
         https://raw.githubusercontent.com/ERSTT/Docker-WeChat/refs/heads/main/start-wechat.sh && \
+    curl -L -o /usr/local/wechat-icon.png \
+        https://raw.githubusercontent.com/ERSTT/Docker-WeChat/refs/heads/main/wechat-icon.png && \
     chmod +x /usr/bin/start-wechat.sh && \
     echo "/usr/bin/start-wechat.sh" > /defaults/autostart && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
