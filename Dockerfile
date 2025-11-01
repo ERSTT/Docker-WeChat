@@ -19,7 +19,8 @@ RUN apt-get update && \
         libatspi2.0-0 \
         libuuid1 \
         libsecret-1-0 \
-        libappindicator3-1 && \
+        libappindicator3-1 
+        plank && \
     mkdir -p /defaults && \
     curl -L -o /defaults/menu.xml \
         https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/menu.xml && \
