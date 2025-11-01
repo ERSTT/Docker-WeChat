@@ -40,6 +40,8 @@ fi
 
 echo "Clean up complete."
 
+mkdir -p "$(dirname "$WeChatLog")"
+mkdir -p "$(dirname "$QQLog")"
 
 if [ ! -f "$WeChat" ]; then
     echo "Install WeChat" | tee -a "$WeChatLog"
