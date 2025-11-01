@@ -11,7 +11,7 @@ if [ ! -f "$WeChat" ]; then
         sudo apt-get install -y /tmp/WeChatLinux_x86_64.deb
         sudo rm -rf /tmp/WeChatLinux_x86_64.deb
         sudo touch "$WeChat"
-    } >> /proc/1/fd/1 2>&1
+    } >> /usr/local/WeChat.log 2>&1
 fi
 
 if [ ! -f "$QQ" ]; then
@@ -22,7 +22,7 @@ if [ ! -f "$QQ" ]; then
         sudo apt-get install -y /tmp/QQLinux_x86_64.deb
         sudo rm -rf /tmp/QQLinux_x86_64.deb
         sudo touch "$QQ"
-    } >> /proc/1/fd/1 2>&1
+    } >> /usr/local/QQ.log 2>&1
 fi
 
 sleep 2
