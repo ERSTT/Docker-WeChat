@@ -9,7 +9,7 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         fonts-noto-cjk \
         curl \
-        ca-certificates
+        ca-certificates \
         libgtk-3-0 \
         libnotify4 \
         libnss3 \
