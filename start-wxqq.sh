@@ -59,6 +59,6 @@ if [ ! -f "$QQ" ]; then
     sudo touch "$QQ" 2>&1 | tee -a "$QQLog"
 fi
 
-/usr/bin/plank > /dev/null 2>&1 &
 /usr/bin/wechat > /dev/null 2>&1 &
 /usr/bin/qq > /dev/null 2>&1 &
+/usr/bin/start_plank.sh > /dev/null 2>&1 &
