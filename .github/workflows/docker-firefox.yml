@@ -19,7 +19,7 @@ jobs:
       - name: Get current date in UTC+8
         id: date
         run: |
-          current_date=$(TZ="Asia/Shanghai" date +'%y%m%d')
+          current_date=$(TZ="Asia/Shanghai" date +'%Y%m%d')
           echo "Current date is $current_date"
           echo "DATE=$current_date" >> $GITHUB_ENV
 
@@ -32,5 +32,5 @@ jobs:
 
       - name: Push Docker images
         run: |
-          docker push erstt/wxqq:firefox_${{ env.DATE }} \
+          docker push erstt/wxqq:firefox_${{ env.DATE }}
           docker push erstt/wxqq:firefox
