@@ -28,6 +28,8 @@ RUN apt-get update && \
         https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/Tencent.png && \
     curl -L -o /usr/bin/start-wxqq.sh \
         https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/start-wxqq.sh && \
+    curl -L -o /usr/bin/start_plank.sh \
+        https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/start_plank.sh && \
     curl -L -o /usr/bin/start-wechat.sh \
         https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/start-wechat.sh && \
     curl -L -o /usr/local/wechat-icon.png \
