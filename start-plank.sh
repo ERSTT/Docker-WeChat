@@ -1,5 +1,7 @@
 #!/bin/bash
 
+trap '' SIGHUP SIGTERM
+
 plank > /dev/null 2>&1 &
 
 prev_res=$(xrandr | grep '*' | awk '{print $1}')
