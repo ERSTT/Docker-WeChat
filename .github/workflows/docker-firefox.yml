@@ -26,8 +26,8 @@ jobs:
       - name: Build Docker image
         run: |
           docker build \
-            -t erstt/wxqq:${{ env.DATE }} \
-            -t erstt/wxqq:latest \
+            -t erstt/wxqq:firefox_${{ env.DATE }} \
+            -t erstt/wxqq:firefox \
             ./Firefox
 
       - name: Push Docker images
