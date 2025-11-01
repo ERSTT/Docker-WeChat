@@ -61,4 +61,4 @@ fi
 
 /usr/bin/wechat > /dev/null 2>&1 &
 /usr/bin/qq > /dev/null 2>&1 &
-/usr/bin/start_plank.sh > /dev/null 2>&1 &
+/usr/bin/start-plank.sh > /dev/null 2>&1 &
