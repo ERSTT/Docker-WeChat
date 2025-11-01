@@ -20,6 +20,8 @@ RUN apt-get update && \
         libuuid1 \
         libsecret-1-0 \
         libappindicator3-1 \
+        chromium \
+        chromium-l10n \
         plank && \
     mkdir -p /defaults && \
     curl -L -o /defaults/menu.xml \
