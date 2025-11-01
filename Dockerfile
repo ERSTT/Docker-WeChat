@@ -27,10 +27,16 @@ RUN apt-get update && \
         https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/Tencent.png && \
     curl -L -o /usr/bin/start-wxqq.sh \
         https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/start-wxqq.sh && \
+    curl -L -o /usr/bin/start-wechat.sh \
+        https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/start-wechat.sh && \
     curl -L -o /usr/local/wechat-icon.png \
         https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/wechat-icon.png && \
+    curl -L -o /usr/bin/start-qq.sh \
+        https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/start-qq.sh && \
     curl -L -o /usr/local/qq-icon.png \
         https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/qq-icon.png && \
     chmod +x /usr/bin/start-wxqq.sh && \
+    chmod +x /usr/bin/start-wechat.sh && \
+    chmod +x /usr/bin/start-qq.sh && \
     echo "/usr/bin/start-wxqq.sh" > /defaults/autostart && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
