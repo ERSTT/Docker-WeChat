@@ -22,15 +22,15 @@ RUN apt-get update && \
         libappindicator3-1 && \
     mkdir -p /defaults && \
     curl -L -o /defaults/menu.xml \
-        https://raw.githubusercontent.com/ERSTT/Docker-WeChat/refs/heads/main/menu.xml && \
+        https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/menu.xml && \
     curl -L -o /usr/share/selkies/www/icon.png \
-        https://raw.githubusercontent.com/ERSTT/Docker-WeChat/refs/heads/main/Tencent.png && \
-    curl -L -o /usr/bin/start-tencent.sh \
-        https://raw.githubusercontent.com/ERSTT/Docker-WeChat/refs/heads/main/start-tencent.sh && \
+        https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/Tencent.png && \
+    curl -L -o /usr/bin/start-wxqq.sh \
+        https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/start-wxqq.sh && \
     curl -L -o /usr/local/wechat-icon.png \
-        https://raw.githubusercontent.com/ERSTT/Docker-WeChat/refs/heads/main/wechat-icon.png && \
+        https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/wechat-icon.png && \
     curl -L -o /usr/local/qq-icon.png \
-        https://raw.githubusercontent.com/ERSTT/Docker-WeChat/refs/heads/main/qq-icon.png && \
-    chmod +x /usr/bin/start-tencent.sh && \
-    echo "/usr/bin/start-tencent.sh" > /defaults/autostart && \
+        https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/qq-icon.png && \
+    chmod +x /usr/bin/start-wxqq.sh && \
+    echo "/usr/bin/start-wxqq.sh" > /defaults/autostart && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
