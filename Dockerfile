@@ -22,7 +22,7 @@ RUN apt-get update && \
         libappindicator3-1 \
         chromium \
         chromium-l10n \
-        plank && \
+        tint2 && \
     mkdir -p /defaults && \
     curl -L -o /defaults/menu.xml \
         https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/menu.xml && \
@@ -30,8 +30,6 @@ RUN apt-get update && \
         https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/Tencent.png && \
     curl -L -o /usr/bin/start-wxqq.sh \
         https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/start-wxqq.sh && \
-    curl -L -o /usr/bin/start-plank.sh \
-        https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/start-plank.sh && \
     curl -L -o /usr/bin/start-wechat.sh \
         https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/start-wechat.sh && \
     curl -L -o /usr/local/wechat-icon.png \
@@ -41,7 +39,6 @@ RUN apt-get update && \
     curl -L -o /usr/local/qq-icon.png \
         https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/qq-icon.png && \
     chmod +x /usr/bin/start-wxqq.sh && \
-    chmod +x /usr/bin/start-plank.sh && \
     chmod +x /usr/bin/start-wechat.sh && \
     chmod +x /usr/bin/start-qq.sh && \
     echo "/usr/bin/start-wxqq.sh" > /defaults/autostart && \
