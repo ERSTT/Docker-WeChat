@@ -3,6 +3,7 @@
 <menu id="root-menu" label="MENU">
 <item label="WeChat" icon="/usr/local/wechat-icon.png"><action name="Execute"><command>/usr/bin/start-wechat.sh</command></action></item>
 <item label="QQ" icon="/usr/local/qq-icon.png"><action name="Execute"><command>/usr/bin/start-qq.sh</command></action></item>
+<item label="Chromium" icon="/usr/share/icons/hicolor/256x256/apps/chromium.png"><action name="Execute"><command>/usr/bin/chromium</command></action></item>
 <item label="xterm" icon="/usr/share/pixmaps/xterm-color_48x48.xpm"><action name="Execute"><command>/usr/bin/xterm</command></action></item>
 </menu>
 </openbox_menu>
