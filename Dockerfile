@@ -39,6 +39,7 @@ RUN apt-get update && \
     curl -L -o /usr/local/qq-icon.png \
         https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/qq-icon.png && \
     chmod +x /usr/bin/start-wxqq.sh && \
+    chmod +x /usr/bin/start_plank.sh && \
     chmod +x /usr/bin/start-wechat.sh && \
     chmod +x /usr/bin/start-qq.sh && \
     echo "/usr/bin/start-wxqq.sh" > /defaults/autostart && \
