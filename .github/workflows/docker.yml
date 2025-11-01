@@ -32,5 +32,5 @@ jobs:
 
       - name: Push Docker images
         run: |
-          docker push erstt/wechat:${{ env.DATE }}
-          docker push erstt/wechat:latest
+          docker push erstt/wxqq:${{ env.DATE }}
+          docker push erstt/wxqq:latest
