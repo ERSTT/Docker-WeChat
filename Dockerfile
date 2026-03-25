@@ -21,7 +21,8 @@ RUN apt-get update && \
         libsecret-1-0 \
         libappindicator3-1 \
         chromium \
-        chromium-l10n && \
+        chromium-l10n \
+        xdotool && \
     mkdir -p /defaults && \
     curl -L -o /defaults/menu.xml \
         https://raw.githubusercontent.com/ERSTT/Docker-WXQQ/refs/heads/main/menu.xml && \
